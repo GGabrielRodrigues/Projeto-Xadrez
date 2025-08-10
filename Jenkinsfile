@@ -4,6 +4,7 @@ pipeline {
     tools {
         git 'Default'
         jdk 'JDK17' // Lembre-se de configurar essa ferramenta no Jenkins
+        Maven 'Maven3'
     }
 
     stages {
