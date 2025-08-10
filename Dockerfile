@@ -16,7 +16,7 @@ COPY src ./src
 RUN mvn clean package
 
 # ESTÁGIO 2: Criar a imagem final com o JRE 17
-FROM openjdk:17-jre-slim
+FROM eclipse-temurin:17-jre-alpine
 
 WORKDIR /app
 
