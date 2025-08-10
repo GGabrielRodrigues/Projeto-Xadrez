@@ -50,7 +50,7 @@ pipeline {
             echo 'Limpando imagens Docker antigas...'
             // Comando para remover imagens de builds anteriores deste job
             sh """
-                docker images -a --filter=reference='projeto-xadrez:*' --format='{{.ID}} {{.Tag}}' | grep -v "<none>" | grep -v "${env.BUILD_NUMBER}" | awk '{print $1}' | xargs --no-run-if-empty docker rmi -f || true
+                docker images -a --filter=reference='projeto-xadrez:*' --format='{{.ID}} {{.Tag}}' | grep -v "<none>" | grep -v "${env.BUILD_NUMBER}" | awk '{print \$1}' | xargs --no-run-if-empty docker rmi -f || true
             """
         }
     }

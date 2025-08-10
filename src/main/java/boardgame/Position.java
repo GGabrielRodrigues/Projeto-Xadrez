@@ -15,7 +15,7 @@ public class Position {
         return row;
     }
 
-    public void setRow()
+    public void setRow(int row)
     {
         this.row = row;
     }
