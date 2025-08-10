@@ -1,0 +1,39 @@
+# Ignorar configurações do VS Code
+.vscode/
+
+# Arquivos compilados Java
+*.class
+
+# Logs
+*.log
+
+# Diretórios de build
+bin/
+out/
+build/
+target/
+
+# Arquivos temporários do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos temporários de IDEs
+*.iml
+.idea/
+*.ipr
+*.iws
+
+# Arquivos de cache
+*.tmp
+*.swp
+*.swo
+
+# Arquivos gerados pelo Maven/Gradle
+.gradle/
+.mvn/
+!/.mvn/wrapper/maven-wrapper.jar
+
+# Arquivos de teste de cobertura
+*.exec
+*.coverage
+*.coverage.xml
